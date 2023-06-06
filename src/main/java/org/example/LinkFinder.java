@@ -17,7 +17,7 @@ public class LinkFinder {
     public void start(){
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a URL (You can skip the \"https://www.\" part) to check links: ");
-        String url = normalizeUrl(scan.nextLine());
+        String url = normalizeUrl(scan.nextLine().trim());
 
         if (isValidUrl(url)) {
             printLinks(url);
